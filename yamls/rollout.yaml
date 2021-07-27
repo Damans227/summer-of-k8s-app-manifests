@@ -23,8 +23,6 @@ spec:
             - containerPort: 8080
   strategy:
     canary:
-      autoPromotionEnabled: true
-      autoPromotionSeconds: 30
       stableService: summer-k8s-service-stable
       canaryService: summer-k8s-service-canary
       trafficRouting:
