@@ -3,6 +3,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: summer-k8s-service-stable
+  annotations:
+    a8r.io/owner: "Damans227@gmail.com"
+    a8r.io/repository: "https://github.com/Damans227/summer-of-k8s-app-manifests/"
   labels:
     app: summer-k8s-app  
 spec:
@@ -19,6 +22,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: summer-k8s-service-canary
+  annotations:
+    a8r.io/owner: "Damans227@gmail.com"
+    a8r.io/repository: "https://github.com/Damans227/summer-of-k8s-app-manifests/"
   labels:
     app: summer-k8s-app 
 spec:
